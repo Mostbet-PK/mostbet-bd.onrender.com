@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: mostbet-bd
+    runtime: static
+    staticPublishPath: ./
+    routes:
+      - type: redirect
+        source: /go
+        destination: https://8a1e2ftbmb.com/sF6U
+        status: 302
+      - type: redirect
+        source: /go/*
+        destination: https://8a1e2ftbmb.com/sF6U
+        status: 302
+    headers:
+      - path: /*
+        name: X-Frame-Options
+        value: SAMEORIGIN
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
